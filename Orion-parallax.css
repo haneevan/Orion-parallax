@@ -1,0 +1,105 @@
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("space.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("space2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("space3.jpg");
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url("space4.jpg");
+  min-height: 400px;
+  
+}
+.bgimg-5 {
+  background-image: url("space5.jpg");
+  min-height: 400px;
+  
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+ }
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+#stars {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: separate;
+  width: 100%;
+}
+
+#stars td, #stars th {
+  border: 0.5px solid #ddd;
+  padding: 10px;
+}
+
+#stars tr:hover {background-color: #000000;}
+
+#stars tr:hover {background-color: #000000;}
+
+#stars th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ab55dd;
+  color: white;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
